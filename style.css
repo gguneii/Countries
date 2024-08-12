@@ -8,31 +8,31 @@
 }
 
 header {
-    position: relative;
+  position: relative;
   top: 0;
   width: 100%;
   z-index: 1000;
   background-color: white;
 }
 header .container {
-    padding: 1rem;
-    width: 100%;
-    margin: auto;
+  padding: 1rem;
+  width: 100%;
+  margin: auto;
 }
 li {
   list-style: none;
 }
 header a {
-    cursor: pointer;
-    text-decoration: none;
-    color: black;
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
 }
 header .lists {
-    position: absolute;
-    width: 100%;
-    top: 100%;
-    left: 0;
-    max-height: 0;
+  position: absolute;
+  width: 100%;
+  top: 100%;
+  left: 0;
+  max-height: 0;
   overflow: hidden;
   color: black;
   background-color: white;
@@ -42,59 +42,59 @@ header .lists {
   transition: max-height 0.7s ease;
 }
 .first-lists {
-    display: none;
+  display: none;
 }
 header .lists li {
-    padding: 20px 0;
-    border-bottom: 1px solid #eee;
-    width: 50vw;
-    text-align: center;
+  padding: 20px 0;
+  border-bottom: 1px solid #eee;
+  width: 50vw;
+  text-align: center;
 }
 header .lists li:first-child {
-    border-top: 1px solid #eee;
+  border-top: 1px solid #eee;
 }
 header.active .lists {
-    max-height: 400px;
+  max-height: 400px;
 }
 header nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 nav .light {
   font-size: 25px;
 }
 nav .logo {
-    border-bottom: 2px solid var(--benovse);
+  border-bottom: 2px solid var(--benovse);
   color: var(--benovse);
 }
 .fs-25 {
-    font-size: 2.5rem;
+  font-size: 2.5rem;
 }
 .w-6 {
-    width: 1.5rem;
+  width: 1.5rem;
 }
 .h-6 {
-    height: 1.5rem;
+  height: 1.5rem;
 }
 header.active + main {
   transform: translateY(400px);
 }
 header.active .menu {
-    display: block;
+  display: block;
 }
 main {
-    background-color: #e5e7eb;
-    transition: transform 0.7s ease;
+  background-color: #e5e7eb;
+  transition: transform 0.7s ease;
 }
 main .container {
-    margin: auto;
-    text-align: center;
-    width: 100%;
+  margin: auto;
+  text-align: center;
+  width: 100%;
 }
 main .title h2,
 .title p {
-    font-size: 1.875rem;
+  font-size: 1.875rem;
   line-height: 2.25rem;
   font-weight: 700;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
@@ -250,35 +250,41 @@ a {
   align-items: center;
   flex-wrap: wrap;
 }
-.show-more{
-        margin: 20px 0;
-        padding: 13px 25px;
-        border: 1px solid #9a9a9a;
-        background-color: #e5e7eb;
-        border-radius: 5px;
-        font-size: 18px;
-        outline: none;
+.show-more {
+  margin: 20px 0;
+  padding: 13px 25px;
+  border: 1px solid #9a9a9a;
+  background-color: #e5e7eb;
+  border-radius: 5px;
+  font-size: 18px;
+  outline: none;
 }
 footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 20px;
 }
-footer .privacy a{
- padding: 0 20px;
+footer .privacy a {
+  padding: 0 10px;
+  text-align: center;
 }
-footer .icons i{
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    margin-right: 10px;
-    width: 2.5rem;
-    height: 2.5rem;
-    border: 1px solid var(--benovse);
-    border-radius: 50%;
-    background-color: var(--benovse);
-    cursor: pointer;
+.icons{
+    margin: auto;
+}
+footer .icons i {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+  width: 2.5rem;
+  height: 2.5rem;
+  border: 1px solid var(--benovse);
+  border-radius: 50%;
+  background-color: var(--benovse);
+  cursor: pointer;
+  margin-top: 20px
 }
 @media only screen and (min-width: 768px) {
   .navbar {
@@ -357,5 +363,8 @@ footer .icons i{
   #card-random img {
     width: 60%;
     overflow: hidden;
+  }
+  .icons{
+    margin: initial;
   }
 }
